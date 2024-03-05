@@ -107,7 +107,6 @@ class Program
                 ItemSelection();
                 QuantitySelection();
                 item.RestockItem(quantity);
-                item.PrintDetails();
                 Console.WriteLine($"\n{quantity} {item.ItemName}/s restocked, updated quantity is {item.QuantityInStock}");
                 goto Loop;
             case 4:
