@@ -97,6 +97,7 @@ class Program
                 if (item.limitedQuantity == 1)
                 {
                     Console.WriteLine($"\nCannot sell {quantity} {item.ItemName}/s as quantity is less!");
+                    item.limitedQuantity = 0;
                 }
                 else
                 {
